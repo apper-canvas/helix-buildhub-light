@@ -1,16 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import Layout from './Layout'
-import Home from './pages/Home'
-import Dashboard from './pages/Dashboard'
-import Projects from './pages/Projects'
-import Clients from './pages/Clients'
-import Expenses from './pages/Expenses'
-import Workers from './pages/Workers'
-import Documents from './pages/Documents'
-import Reports from './pages/Reports'
-import Settings from './pages/Settings'
-import NotFound from './pages/NotFound'
+import HomePage from '@/components/pages/HomePage'
+import DashboardPage from '@/components/pages/DashboardPage'
+import ProjectsPage from '@/components/pages/ProjectsPage'
+import ClientsPage from '@/components/pages/ClientsPage'
+import ExpensesPage from '@/components/pages/ExpensesPage'
+import WorkersPage from '@/components/pages/WorkersPage'
+import DocumentsPage from '@/components/pages/DocumentsPage'
+import ReportsPage from '@/components/pages/ReportsPage'
+import SettingsPage from '@/components/pages/SettingsPage'
+import NotFoundPage from '@/components/pages/NotFoundPage'
 
 function App() {
   return (
@@ -18,16 +18,16 @@ function App() {
       <div className="min-h-screen bg-background">
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="projects" element={<Projects />} />
-            <Route path="clients" element={<Clients />} />
-            <Route path="expenses" element={<Expenses />} />
-            <Route path="workers" element={<Workers />} />
-            <Route path="documents" element={<Documents />} />
-            <Route path="reports" element={<Reports />} />
-            <Route path="settings" element={<Settings />} />
-            <Route path="*" element={<NotFound />} />
+<Route index element={<HomePage />} />
+            <Route path="dashboard" element={<DashboardPage />} />
+            <Route path="projects" element={<ProjectsPage />} />
+            <Route path="clients" element={<ClientsPage />} />
+            <Route path="expenses" element={<ExpensesPage />} />
+            <Route path="workers" element={<WorkersPage />} />
+            <Route path="documents" element={<DocumentsPage />} />
+            <Route path="reports" element={<ReportsPage />} />
+            <Route path="settings" element={<SettingsPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>
         <ToastContainer

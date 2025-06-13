@@ -1,9 +1,11 @@
-import { motion } from 'framer-motion'
-import { useNavigate } from 'react-router-dom'
-import ApperIcon from '../components/ApperIcon'
+import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import ApperIcon from '@/components/ApperIcon';
+import Button from '@/components/atoms/Button';
+import Text from '@/components/atoms/Text';
 
-const NotFound = () => {
-  const navigate = useNavigate()
+const NotFoundPage = () => {
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-surface to-white p-6">
@@ -22,37 +24,41 @@ const NotFound = () => {
           <ApperIcon name="AlertTriangle" className="w-12 h-12 text-primary" />
         </motion.div>
         
-        <h1 className="text-6xl font-bold font-display text-secondary mb-4">404</h1>
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">Page Not Found</h2>
-        <p className="text-gray-600 mb-8">
+        <Text as="h1" className="text-6xl font-bold font-display text-secondary mb-4">404</Text>
+        <Text as="h2" className="text-2xl font-semibold text-gray-900 mb-4">Page Not Found</Text>
+        <Text as="p" className="text-gray-600 mb-8">
           The page you're looking for doesn't exist or has been moved. 
           Let's get you back to building great things.
-        </p>
+        </Text>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <motion.button
+          <Button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate(-1)}
-            className="bg-gray-100 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors flex items-center justify-center space-x-2"
+            variant="secondary"
+            icon="ArrowLeft"
+            iconPosition="left"
+            size="lg"
           >
-            <ApperIcon name="ArrowLeft" className="w-5 h-5" />
-            <span>Go Back</span>
-          </motion.button>
+            Go Back
+          </Button>
           
-          <motion.button
+          <Button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate('/dashboard')}
-            className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors flex items-center justify-center space-x-2"
+            variant="primary"
+            icon="Home"
+            iconPosition="left"
+            size="lg"
           >
-            <ApperIcon name="Home" className="w-5 h-5" />
-            <span>Go to Dashboard</span>
-          </motion.button>
+            Go to Dashboard
+          </Button>
         </div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFoundPage;

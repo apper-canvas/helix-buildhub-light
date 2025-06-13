@@ -1,12 +1,12 @@
-import Home from '../pages/Home'
-import Dashboard from '../pages/Dashboard'
-import Projects from '../pages/Projects'
-import Clients from '../pages/Clients'
-import Expenses from '../pages/Expenses'
-import Workers from '../pages/Workers'
-import Documents from '../pages/Documents'
-import Reports from '../pages/Reports'
-import Settings from '../pages/Settings'
+import HomePage from '@/components/pages/HomePage'
+import DashboardPage from '@/components/pages/DashboardPage'
+import ProjectsPage from '@/components/pages/ProjectsPage'
+import ClientsPage from '@/components/pages/ClientsPage'
+import ExpensesPage from '@/components/pages/ExpensesPage'
+import WorkersPage from '@/components/pages/WorkersPage'
+import DocumentsPage from '@/components/pages/DocumentsPage'
+import ReportsPage from '@/components/pages/ReportsPage'
+import SettingsPage from '@/components/pages/SettingsPage'
 
 export const routes = {
   home: {
@@ -14,63 +14,63 @@ export const routes = {
     label: 'Home',
     path: '/',
     icon: 'Home',
-    component: Home
+component: HomePage
   },
   dashboard: {
     id: 'dashboard',
     label: 'Dashboard',
     path: '/dashboard',
     icon: 'LayoutDashboard',
-    component: Dashboard
+component: DashboardPage
   },
   projects: {
     id: 'projects',
     label: 'Projects',
     path: '/projects',
     icon: 'Building2',
-    component: Projects
+component: ProjectsPage
   },
   clients: {
     id: 'clients',
     label: 'Clients',
     path: '/clients',
     icon: 'Users',
-    component: Clients
+component: ClientsPage
   },
   expenses: {
     id: 'expenses',
     label: 'Expenses',
     path: '/expenses',
     icon: 'Receipt',
-    component: Expenses
+component: ExpensesPage
   },
   workers: {
     id: 'workers',
     label: 'Workers',
     path: '/workers',
     icon: 'HardHat',
-    component: Workers
+component: WorkersPage
   },
   documents: {
     id: 'documents',
     label: 'Documents',
     path: '/documents',
     icon: 'FileText',
-    component: Documents
+component: DocumentsPage
   },
   reports: {
     id: 'reports',
     label: 'Reports',
     path: '/reports',
     icon: 'BarChart3',
-    component: Reports
+component: ReportsPage
   },
   settings: {
     id: 'settings',
     label: 'Settings',
     path: '/settings',
     icon: 'Settings',
-    component: Settings
+component: SettingsPage
   }
 }
 

@@ -1,16 +1,18 @@
-import { motion } from 'framer-motion'
-import { useNavigate } from 'react-router-dom'
-import ApperIcon from '../components/ApperIcon'
+import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import ApperIcon from '@/components/ApperIcon';
+import Text from '@/components/atoms/Text';
+import Button from '@/components/atoms/Button';
 
-const Home = () => {
-  const navigate = useNavigate()
+const HomePage = () => {
+  const navigate = useNavigate();
 
   const quickActions = [
     { label: 'View Dashboard', path: '/dashboard', icon: 'LayoutDashboard', color: 'bg-primary' },
     { label: 'Create Project', path: '/projects', icon: 'Plus', color: 'bg-success' },
     { label: 'Add Expense', path: '/expenses', icon: 'Receipt', color: 'bg-warning' },
     { label: 'Manage Workers', path: '/workers', icon: 'HardHat', color: 'bg-accent' }
-  ]
+  ];
 
   return (
     <div className="min-h-full bg-gradient-to-br from-surface to-white">
@@ -27,13 +29,13 @@ const Home = () => {
               <ApperIcon name="Building2" className="w-8 h-8 text-white" />
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold font-display text-secondary mb-4">
+          <Text as="h1" className="text-4xl md:text-5xl font-bold font-display text-secondary mb-4">
             Welcome to BuildHub Pro
-          </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          </Text>
+          <Text as="p" className="text-lg text-gray-600 max-w-2xl mx-auto">
             Your comprehensive construction management platform. Streamline projects, manage teams, 
             track expenses, and keep everything organized in one powerful dashboard.
-          </p>
+          </Text>
         </motion.div>
 
         {/* Quick Actions */}
@@ -44,18 +46,19 @@ const Home = () => {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
         >
           {quickActions.map((action, index) => (
-            <motion.button
+            <Button
               key={action.label}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => navigate(action.path)}
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-200 border border-gray-100"
+              className="!bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-200 border border-gray-100 flex-col items-center justify-center"
+              variant="ghost" // Override base styles with custom class
             >
               <div className={`w-12 h-12 ${action.color} rounded-lg flex items-center justify-center mb-4 mx-auto`}>
                 <ApperIcon name={action.icon} className="w-6 h-6 text-white" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">{action.label}</h3>
-            </motion.button>
+              <Text as="h3" className="font-semibold text-gray-900 mb-2">{action.label}</Text>
+            </Button>
           ))}
         </motion.div>
 
@@ -66,9 +69,9 @@ const Home = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="bg-white rounded-2xl shadow-lg p-8"
         >
-          <h2 className="text-2xl font-bold font-display text-secondary mb-8 text-center">
+          <Text as="h2" className="text-2xl font-bold font-display text-secondary mb-8 text-center">
             Everything You Need to Manage Your Construction Business
-          </h2>
+          </Text>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -106,8 +109,8 @@ const Home = () => {
                 <div className="w-12 h-12 bg-surface rounded-lg flex items-center justify-center mx-auto mb-4">
                   <ApperIcon name={feature.icon} className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                <p className="text-sm text-gray-600">{feature.description}</p>
+                <Text as="h3" className="font-semibold text-gray-900 mb-2">{feature.title}</Text>
+                <Text as="p" className="text-sm text-gray-600">{feature.description}</Text>
               </div>
             ))}
           </div>
@@ -120,19 +123,20 @@ const Home = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-center mt-12"
         >
-          <motion.button
+          <Button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate('/dashboard')}
-            className="bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200"
+            className="!px-8 !py-4 !text-lg font-semibold shadow-lg hover:shadow-xl" // Override button size/padding
+            icon="ArrowRight"
+            iconPosition="right"
           >
             Get Started with Dashboard
-            <ApperIcon name="ArrowRight" className="w-5 h-5 ml-2 inline" />
-          </motion.button>
+          </Button>
         </motion.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default HomePage;
