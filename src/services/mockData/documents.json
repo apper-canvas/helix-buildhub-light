@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "name": "Safety Manual 2024.pdf",
+    "category": "Safety",
+    "uploadDate": "2024-01-15",
+    "fileUrl": "https://example.com/documents/safety-manual-2024.pdf",
+    "tags": ["Important", "Safety", "Reference"],
+    "size": 2458
+  },
+  {
+    "id": "2",
+    "name": "Metro Development Contract.pdf",
+    "category": "Contracts",
+    "uploadDate": "2024-01-10",
+    "fileUrl": "https://example.com/documents/metro-dev-contract.pdf",
+    "tags": ["Legal", "Important"],
+    "size": 1876
+  },
+  {
+    "id": "3",
+    "name": "Building Permit Application.pdf",
+    "category": "Permits",
+    "uploadDate": "2024-01-20",
+    "fileUrl": "https://example.com/documents/building-permit-app.pdf",
+    "tags": ["Legal", "Permits"],
+    "size": 934
+  },
+  {
+    "id": "4",
+    "name": "Insurance Policy Commercial.pdf",
+    "category": "Insurance",
+    "uploadDate": "2024-01-05",
+    "fileUrl": "https://example.com/documents/insurance-policy.pdf",
+    "tags": ["Important", "Legal"],
+    "size": 3421
+  },
+  {
+    "id": "5",
+    "name": "OSHA Compliance Checklist.xlsx",
+    "category": "Compliance",
+    "uploadDate": "2024-01-25",
+    "fileUrl": "https://example.com/documents/osha-checklist.xlsx",
+    "tags": ["Safety", "Compliance", "Template"],
+    "size": 567
+  },
+  {
+    "id": "6",
+    "name": "Contractor License Certificate.jpg",
+    "category": "Licenses",
+    "uploadDate": "2024-01-08",
+    "fileUrl": "https://example.com/documents/contractor-license.jpg",
+    "tags": ["Legal", "Important"],
+    "size": 1234
+  },
+  {
+    "id": "7",
+    "name": "Equipment Operation Manual.pdf",
+    "category": "Manuals",
+    "uploadDate": "2024-01-30",
+    "fileUrl": "https://example.com/documents/equipment-manual.pdf",
+    "tags": ["Reference", "Safety"],
+    "size": 4567
+  },
+  {
+    "id": "8",
+    "name": "Project Timeline Template.xlsx",
+    "category": "Other",
+    "uploadDate": "2024-02-01",
+    "fileUrl": "https://example.com/documents/project-timeline.xlsx",
+    "tags": ["Template", "Reference"],
+    "size": 789
+  }
+]

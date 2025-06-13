@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "projectId": "1",
+    "category": "Materials",
+    "amount": 45000,
+    "date": "2024-01-20",
+    "description": "Concrete and rebar for foundation work",
+    "receipt": "INV-2024-001"
+  },
+  {
+    "id": "2",
+    "projectId": "1",
+    "category": "Labor",
+    "amount": 28000,
+    "date": "2024-01-25",
+    "description": "Foundation crew wages - Week 1",
+    "receipt": "PAY-2024-001"
+  },
+  {
+    "id": "3",
+    "projectId": "2",
+    "category": "Equipment",
+    "amount": 8500,
+    "date": "2024-02-05",
+    "description": "Crane rental for structural work",
+    "receipt": "RENT-2024-001"
+  },
+  {
+    "id": "4",
+    "projectId": "3",
+    "category": "Materials",
+    "amount": 32000,
+    "date": "2024-01-15",
+    "description": "Flooring materials and fixtures",
+    "receipt": "INV-2024-002"
+  },
+  {
+    "id": "5",
+    "projectId": "1",
+    "category": "Transportation",
+    "amount": 2200,
+    "date": "2024-01-22",
+    "description": "Material delivery and fuel costs",
+    "receipt": "TRANS-2024-001"
+  },
+  {
+    "id": "6",
+    "projectId": "3",
+    "category": "Labor",
+    "amount": 18500,
+    "date": "2024-01-30",
+    "description": "Electrical work and installation",
+    "receipt": "PAY-2024-002"
+  },
+  {
+    "id": "7",
+    "projectId": "2",
+    "category": "Permits",
+    "amount": 5500,
+    "date": "2024-02-01",
+    "description": "Building permits and inspection fees",
+    "receipt": "PERMIT-2024-001"
+  },
+  {
+    "id": "8",
+    "projectId": "4",
+    "category": "Materials",
+    "amount": 65000,
+    "date": "2024-01-10",
+    "description": "Steel structure and roofing materials",
+    "receipt": "INV-2024-003"
+  },
+  {
+    "id": "9",
+    "projectId": "5",
+    "category": "Other",
+    "amount": 3200,
+    "date": "2024-03-02",
+    "description": "Architectural drawings and blueprints",
+    "receipt": "ARCH-2024-001"
+  },
+  {
+    "id": "10",
+    "projectId": "1",
+    "category": "Equipment",
+    "amount": 12000,
+    "date": "2024-02-10",
+    "description": "Excavator and loader rental",
+    "receipt": "RENT-2024-002"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "name": "Downtown Office Complex",
+    "clientId": "1",
+    "startDate": "2024-01-15",
+    "deadline": "2024-06-30",
+    "status": "Active",
+    "budget": 1250000,
+    "spent": 425000,
+    "workerIds": ["1", "2", "3"],
+    "phase": "Foundation",
+    "notes": "Large commercial office building with 12 floors. Client requested premium finishes and sustainable building practices."
+  },
+  {
+    "id": "2",
+    "name": "Luxury Residential Tower",
+    "clientId": "2",
+    "startDate": "2024-02-01",
+    "deadline": "2024-08-15",
+    "status": "Planning",
+    "budget": 2800000,
+    "spent": 150000,
+    "workerIds": ["4", "5"],
+    "phase": "Planning",
+    "notes": "High-end residential tower with 20 units. Includes penthouse suites and underground parking."
+  },
+  {
+    "id": "3",
+    "name": "Shopping Mall Renovation",
+    "clientId": "3",
+    "startDate": "2024-01-10",
+    "deadline": "2024-04-20",
+    "status": "Active",
+    "budget": 850000,
+    "spent": 650000,
+    "workerIds": ["1", "6"],
+    "phase": "Finishing",
+    "notes": "Complete renovation of existing shopping center. Modernizing storefronts and common areas."
+  },
+  {
+    "id": "4",
+    "name": "Industrial Warehouse",
+    "clientId": "4",
+    "startDate": "2023-11-01",
+    "deadline": "2024-02-28",
+    "status": "Completed",
+    "budget": 750000,
+    "spent": 720000,
+    "workerIds": [],
+    "phase": "Completed",
+    "notes": "Large distribution center with loading docks and office space. Project completed on time and under budget."
+  },
+  {
+    "id": "5",
+    "name": "Medical Center Expansion",
+    "clientId": "5",
+    "startDate": "2024-03-01",
+    "deadline": "2024-09-30",
+    "status": "Planning",
+    "budget": 1800000,
+    "spent": 75000,
+    "workerIds": ["2", "3", "4"],
+    "phase": "Planning",
+    "notes": "Adding new wing to existing medical facility. Requires specialized HVAC and medical gas systems."
+  }
+]
